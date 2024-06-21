@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  overflow-x: hidden;
+}
 
 body::-webkit-scrollbar-track
 {
@@ -67,3 +70,4 @@ br {
   transform: scale(1.05); /* Scale up by 5% */
   transition: transform 0.3s ease; /* Smooth transition over 0.3 seconds */
 }
+

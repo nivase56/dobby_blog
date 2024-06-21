@@ -31,9 +31,9 @@ export default async function Blog() {
 
   return (
     <div className="p-[10%]">
-    <div>
-      <h1 className="text-5xl font-semibold text-center">Stories About Delivery Planning, Efficiency, and Business Success      </h1>
-      <p className="text-center py-5">Get top insights, news, and researched information on route planning, optimizing, and dispatching software. Get your daily dose!</p>
+    <div className="mt-10 md:mt-0">
+      <h1 className="text-5xl font-semibold text-start md:text-center">Stories About Delivery Planning, Efficiency, and Business Success      </h1>
+      <p className="text-start md:text-center py-5">Get top insights, news, and researched information on route planning, optimizing, and dispatching software. Get your daily dose!</p>
       </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-fr lg:md:grid-cols-3">
       

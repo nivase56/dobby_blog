@@ -1,15 +1,15 @@
 import React from "react";
+import { Carousel, Row, Col } from "antd";
 import IconComponent from "../../Common/IconComponent";
-import carTag from "@/Images/cartag.png";
 import Image from "next/image";
 import SubHeading from "../../Common/SubHeading";
 import ContentTag from "../../Common/ContentTag";
-import Slider from "react-slick";
 import car1 from "@/Images/volvo.png";
 import car2 from "@/Images/jaguar.png";
 import car3 from "@/Images/honda.png";
 import car4 from "@/Images/audi.png";
-import car5 from "@/Images/nissan.png";
+import car5 from "@/Images/accord.png";
+
 
 const steps = [
   {
@@ -29,31 +29,18 @@ const steps = [
   },
 ];
 
-const images = [carTag, carTag, carTag];
+const images = [car3, car1, car2, car4, car5, car3, car1, car2, car4, car5, car3, car1, car2, car4, car5];
 
 const CarouselComponent = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    customPaging: (i:any) => (
-      <button className="focus:outline-none w-3 h-3 bg-gray-500 rounded-full" />
-    ),
-  };
-
   return (
     <div className="carousel-container overflow-hidden md:my-10">
-      <Slider {...settings}>
+      <Carousel autoplay autoplaySpeed={6000} dots={false} infinite speed={6000} slidesToShow={5} slidesToScroll={5} >
         {images.map((image, index) => (
-          <div key={index}>
-            <Image src={image} alt={`car-${index} `} className="h-[70px] object-cover md:h-auto" />
+          <div key={index} className="h-[50px] object-cover md:h-auto">
+            <Image src={image} alt={`car-${index}`} height={150} width={150} className="p-2" />
           </div>
         ))}
-      </Slider>
+      </Carousel>
     </div>
   );
 };
@@ -61,12 +48,12 @@ const CarouselComponent = () => {
 const BookingContainer = () => {
   return (
     <>
-      <div className="p-4 ">
-        <ContentTag content="HOW IT WORKS"  classNames="justify-center"/>
+      <div className="p-4">
+        <ContentTag content="HOW IT WORKS" classNames="justify-center" />
         <div className="mt-4">
           <SubHeading content="Book with following 3 working steps" />
         </div>
-        <div className=" my-10 md:flex justify-center gap-20">
+        <div className="my-10 md:flex justify-center gap-20">
           {steps.map((step, index) => (
             <div key={index} className="w-full py-3 md:w-[14%] flex items-center flex-col">
               <div className="rounded-lg shadow-lg flex items-center justify-center h-24 bg-blue-100 w-24 mb-3">
@@ -81,7 +68,7 @@ const BookingContainer = () => {
           ))}
         </div>
       </div>
-      
+
       <CarouselComponent />
     </>
   );

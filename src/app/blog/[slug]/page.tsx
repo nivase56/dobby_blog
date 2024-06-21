@@ -52,7 +52,7 @@ const formattedDate = `${day}.${month}.${year}`;
       
       
         <p className="text-start">{data?.body}</p>
-        <div className="mt-5 prose prose-blue prose-xl">
+        <div className="mt-5 prose prose-blue prose-xl text-start">
           <PortableText value={data?.content}/>
         </div>
     </div>

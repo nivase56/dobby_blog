@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const HeroContainer = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-col lg:flex-row justify-end items-center h-[90%] mt-20 px-1 md:px-0">
+    <div className="flex flex-col-reverse md:flex-col lg:flex-row  justify-end items-center h-[90%] mt-20 px-1 md:px-0">
       <HomeText/>
         <motion.div
           initial={{ x: 1000 }}

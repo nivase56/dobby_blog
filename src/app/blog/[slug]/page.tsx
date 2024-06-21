@@ -39,7 +39,7 @@ const year = date.getUTCFullYear();
 const formattedDate = `${day}.${month}.${year}`;
 
   return (
-    <div className="p-[5%] flex flex-col items-center justify-center text-center gap-6 w-[95%] md:w-3/4 ml-auto mr-auto">
+    <div className="p-[5%] flex flex-col items-center justify-center text-center gap-6 w-[95%] md:w-3/4 lg:w-3/4 ml-auto mr-auto">
       <h1 className="font-bold">{data?.title}</h1>
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-3">

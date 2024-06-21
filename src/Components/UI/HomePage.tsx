@@ -13,7 +13,7 @@ import HeroContainer from "../HomePage/HeroSection/HeroContainer";
 const HomePage = () => {
 
   return (
-    <div>
+    <div className="h-full w-full">
       <HeroContainer/>
       <AppointmentContainer/>
       <BookingContainer/>

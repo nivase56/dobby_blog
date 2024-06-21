@@ -7,24 +7,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const HomeText = () => {
-  const sentence = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.5,
-        staggerChildren: 0.08,
-      },
-    },
-  };
-
-  const letter = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
-  };
-
-  const text =
-    "Get a car wash wherever and whenever you need it with your IOS and Android device.";
 
   return (
     <div className="flex flex-col md:mr-14 ">

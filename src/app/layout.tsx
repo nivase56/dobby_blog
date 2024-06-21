@@ -7,7 +7,7 @@ import Navbar from "@/Components/Common/Navbar";
 
 
 
-const Poppin = Poppins({
+const PoppinsFont = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400","500", "600"],
 });
@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={Poppin.className}>
+      <body className={PoppinsFont.className}>
       <Navbar />
         {children}
         </body>

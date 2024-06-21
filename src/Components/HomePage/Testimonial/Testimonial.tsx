@@ -57,7 +57,7 @@ const Testimonial = () => {
 
   
 
-  return (
+  return ( 
     <div className="bg-blue-50">
       <div className="flex justify-evenly">
         <div className="flex items-center gap-5">

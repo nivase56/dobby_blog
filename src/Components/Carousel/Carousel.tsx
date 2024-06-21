@@ -4,7 +4,7 @@ import CarouselItem from './CarouselItem';
 
 interface CarouselProps {
   items: {
-    image: string;
+    image: any;
     name: string;
     location: string;
     stars: number;

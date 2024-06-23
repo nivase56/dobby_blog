@@ -67,7 +67,7 @@ const Navbar = () => {
         </motion.div>
       ) : (
         <motion.div
-          className="fixed top-0 left-0 right-0 flex p-4 items-center justify-center gap-8 bg-transparent w-[70%] rounded-full ml-auto mr-auto bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg"
+          className="fixed fixed-navbar top-0 left-0 right-0 flex p-4 items-center justify-center gap-8 bg-transparent w-[70%] rounded-full ml-auto mr-auto bg-white bg-opacity-20 backdrop-blur-lg drop-shadow-lg"
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}

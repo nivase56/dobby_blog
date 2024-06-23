@@ -8,9 +8,7 @@ const { Option } = Select;
 
 const tamilNaduPlaces: string[] = [
   "Adyar",
-  "Alwarpet",
   "Anna Nagar",
-  "Ashok Nagar",
   "Besant Nagar",
   "Chrompet",
   "Egmore",
@@ -18,20 +16,12 @@ const tamilNaduPlaces: string[] = [
   "Kilpauk",
   "Kodambakkam",
   "Kolathur",
-  "Madhavaram",
-  "Medavakkam",
   "Mylapore",
   "Nanganallur",
   "Nungambakkam",
   "Pallavaram",
   "Pallikaranai",
-  "Perambur",
-  "Porur",
-  "Royapettah",
-  "Saidapet",
-  "T. Nagar",
-  "Thiruvanmiyur",
-  "Velachery"
+  "Porur"
 ];
 
 const AppointmentContainer: React.FC = () => {

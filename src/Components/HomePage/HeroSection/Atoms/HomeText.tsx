@@ -9,7 +9,8 @@ import { motion } from "framer-motion";
 const HomeText = () => {
 
   return (
-    <div className="flex flex-col md:mr-14 ">
+    <div className="flex flex-col lg:items-end md:w-1/2">
+      <div>
       <Heading content="Book a Wash, " classNames="mt-3 h-12 md:h-16"/>
       <div className="flex h-12 md:h-16">  
         <Heading content="Get a Instant" />
@@ -54,6 +55,7 @@ const HomeText = () => {
         <Image src={AppStore} alt="app-store" className="shadow-lg" width={130} height={130} />
         <Image src={PlayStore} alt="play-store" className="shadow-lg" width={130} height={130}/>
       </motion.div>
+      </div>
     </div>
   );
 };

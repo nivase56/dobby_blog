@@ -13,10 +13,9 @@ const DownloadApp = () => {
           src={triangle}
           alt="triangle"
           className="absolute"
-          width={550}
-          height={550}
+          height={480}
         />
-        <div className="relative py-20 px-8 md:px-36 flex flex-col justify-end">
+        <div className="relative py-20 px-8 md:px-48">
         
               
           <ContentTag content="DOWNLOAD" classNames="pb-4" />

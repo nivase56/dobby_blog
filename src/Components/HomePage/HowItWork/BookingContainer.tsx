@@ -48,7 +48,7 @@ const CarouselComponent = () => {
 const BookingContainer = () => {
   return (
     <>
-      <div className="p-4">
+      <div className="p-4" style={{zIndex:"-20"}}>
         <ContentTag content="HOW IT WORKS" classNames="justify-center" />
         <div className="mt-4">
           <SubHeading content="Book with following 3 working steps" />

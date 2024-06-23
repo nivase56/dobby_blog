@@ -32,13 +32,14 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 md:grid-cols-9 lg:grid-cols-11 bg-[#051C34] p-5 md:p-20">
+    <div className="grid grid-cols-2 gap-4 md:grid-cols-9 lg:grid-cols-11 bg-[#051C34] pl-3 py-5 md:p-20">
       <div className="grid col-span-3">
         <Image
           src={whitelogo}
           alt="whitelogo"
           height={150}
           width={150}
+          className=""
         />
         <h5 className="text-white mt-4">
           Book a Wash, Get a Instant Shine at just ₹25
@@ -72,7 +73,7 @@ const Footer = () => {
             />
           </div>
           
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 py-1">
               <IconComponent
                 icon="carbon:location"
                 className="text-primary h-8 w-8 text-gray-500"
